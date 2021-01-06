@@ -1,0 +1,33 @@
+.footer {
+
+    font-size: 0.7em;
+    color: #fa73d9;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    
+    
+} 
+.footer a {
+    text-decoration: none;
+}  
+  
+.footer a:link{
+      color: #eee;
+      border-bottom: solid 1px  #21212b;
+    }
+.footer a:visited {
+    color: #eeeeee;
+    border-bottom: solid 1px #21212b;
+  }    
+.footer a:hover{
+    color: #eee;
+    border-bottom: solid 1px #eee;
+    }
+
+    
+.footer a:focus {
+    color: #eee;
+    border-bottom: solid 1px #eee;
+    }
+  

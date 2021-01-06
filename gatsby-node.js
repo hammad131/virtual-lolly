@@ -4,7 +4,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { data } = await graphql(`
     {
-      get_lollies {
+      get_lolly {
         getLollies {
           color1
           color2
@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  data.get_lollies.getLollies.forEach(node => {
+  data.get_lolly.getLollies.forEach(node => {
     createPage({
       path: `lolly/${node.link}`,
       component: path.resolve("./src/templates/template.tsx"),

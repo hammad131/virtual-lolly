@@ -4,10 +4,12 @@ import { Button } from "../components/Button"
 import Header from "../components/Header"
 import { navigate } from "@reach/router"
 import "../styles/Home.css"
+import Footer from "../components/Footer"
 export default function Home() {
   return <div className="home">
     <Header />
     <Banner />
     <Button label="Make a new lolly to send to a friend" onClickFunc={() => navigate("/create/")} />
+    <Footer></Footer>  
   </div>
 }

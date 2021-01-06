@@ -8,6 +8,7 @@ import { useMutation } from "@apollo/client"
 import gql from "graphql-tag"
 import Result from "../components/Result"
 import axios from "axios";
+import Footer from "../components/Footer"
 
 const ADD_LOLLY = gql`
     mutation addLolly($color1: String!, 
@@ -142,11 +143,11 @@ const Create = () => {
                         />
 
                         {formik.errors.reciever ? <div className="error">{formik.errors.reciever}</div> : null}
-                        <br /> <label htmlFor="message">Message</label>
+                        <br /> <label htmlFor="message">Say something nice</label>
                         <br /> <textarea
                             id="message"
                             name="message"
-                            placeholder="Say something nice..."
+                            
 
                             onChange={formik.handleChange}
                             value={formik.values.message}
@@ -170,6 +171,7 @@ const Create = () => {
                         <button type="submit">Freeze this lolly and get a link</button>
                     </form></> : <Result link={data?.addLolly?.link} reciever={data?.addLolly?.reciever} sender={data?.addLolly?.sender} message={data?.addLolly?.message} />}
             </div>
+            <Footer></Footer>
         </div >
     )
 }

@@ -4,11 +4,11 @@
   flex-direction: column;
   align-items: center;
 }
-.header__heading {
+.header-heading {
   font-weight: 300;
   color: #fff;
   border-bottom-style: none;
-  text-shadow: #fa73d9 0 0 8px;
+  text-shadow: #fa73d9 0 0 6px;
   font-size: 4.5em;
   font-family: Yellowtail, cursive;
   line-height: 1;
@@ -16,7 +16,7 @@
 
   margin-bottom: 0.2em;
 }
-.header__subheading {
+.header-subheading {
   font-size: 1.1em;
   font-style: italic;
   color: #ddd;
@@ -27,7 +27,11 @@
   line-height: 1.2;
 }
 @media (max-width: 425px) {
-  .header__subheading {
+  .header-subheading {
     margin-bottom: -3em;
   }
+  .header-heading {
+    font-size: 4em;
+  }
+
 }

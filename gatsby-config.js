@@ -14,7 +14,7 @@ module.exports = {
         // This type will contain remote schema Query type
         typeName: "mhr",
         // This is field under which it's accessible
-        fieldName: "get_lollies",
+        fieldName: "get_lolly",
         // Url to query from
         url:
           "https://virtual-lolly-by-mhr.netlify.app/.netlify/functions/lollies",
