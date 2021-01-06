@@ -69,6 +69,16 @@ const Create = () => {
 
         },
     });
+    useEffect(() => {
+        async function runHook() {
+            const response = await axios("https://api.netlify.com/build_hooks/5ff5b423b70adff929d0003c", {
+                method: "POST",
+            });
+
+        }
+        runHook();
+
+    }, [data])
 
 
 
